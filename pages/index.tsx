@@ -9,11 +9,8 @@ const Home: NextPage = () => {
         <title>Yew Kong&apos;s Portfolio</title>
       </Head>
 
-      <h1 className="p10 text-red-500">Welcome!</h1>
-
       {/* Background Canvas - Optional */}
 
-      {/* Header */}
       <Header />
 
       {/* Hero */}
