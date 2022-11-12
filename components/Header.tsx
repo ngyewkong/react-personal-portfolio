@@ -7,7 +7,10 @@ type Props = {};
 function Header({}: Props) {
   return (
     // mx-auto sets margin at the sides
-    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto">
+    <header
+      className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto"
+      style={{ zIndex: 10 }}
+    >
       {/* Using Framer Motion for animations */}
       {/* motion.div as the component */}
       {/* initial: starting properties for the animation */}
