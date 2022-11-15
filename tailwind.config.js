@@ -8,6 +8,16 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      lightprimary: "#FCF8E8",
+      darkprimary: "#2C3639",
+      lightsecondary: "#153462",
+      darksecondary: "#F7AB0A",
+      lightinline: "#000000",
+      darkinline: "#DCD7C9",
+      lightinteractive: "#ECB390",
+      darkinteractive: "#A27B5C",
+    },
   },
   plugins: [],
 };

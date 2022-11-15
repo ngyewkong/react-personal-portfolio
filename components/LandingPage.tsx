@@ -33,15 +33,15 @@ function LandingPage({}: Props) {
       </div>
 
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+        <h2 className="text-sm uppercase text-lightinline dark:text-darkinline pb-2 tracking-[15px]">
           Software Developer
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold scroll-px-10">
-          <span>{text}</span>
+          <span className="text-lightinline dark:text-darkinline">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
 
-        <div className="pt-5">
+        <div className="pt-5 text-lightinline dark:text-darkinline">
           {/* using Link from Next.js to create pre-rendered destinations clickable link */}
           {/* creating your own tailwind utility classes */}
           <Link href="#about">

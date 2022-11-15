@@ -1,10 +1,11 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import DarkModeSwitcher from "./DarkModeSwitcher";
 
 type Props = {};
 
-function Header({}: Props) {
+function Header({ }: Props) {
   return (
     // mx-auto sets margin at the sides
     <header
@@ -56,6 +57,13 @@ function Header({}: Props) {
           fgColor="gray"
           bgColor="transparent"
         />
+
+        <SocialIcon
+          className="cursor-pointer"
+          network="email"
+          fgColor="gray"
+          bgColor="transparent"
+        />
       </motion.div>
 
       <motion.div
@@ -80,12 +88,7 @@ function Header({}: Props) {
           fgColor="gray"
           bgColor="transparent"
         />
-        {/* tailwindcss utility works from smallest to largest screensize */}
-        {/* hidden -> mobile screen hide the text */}
-        {/* uppercase md:inline-flex text-sm text-gray-400 -> medium screen size show text in uppercase, small font and gray color */}
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-          Get In Touch!
-        </p>
+        <DarkModeSwitcher />
       </motion.div>
     </header>
   );

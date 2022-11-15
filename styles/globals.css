@@ -5,6 +5,6 @@
 /* text-[color]/opacity (%) */
 @layer components {
   .heroButton {
-    @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40;
+    @apply px-6 py-2 border border-lightinline dark:border-darkinline rounded-full uppercase text-xs tracking-widest transition-all hover:border-lightsecondary/40 hover:text-lightsecondary/40 dark:hover:border-darksecondary/40 dark:hover:text-darksecondary/40;
   }
 }
