@@ -43,8 +43,8 @@ function DarkModeSwitcher({ }: Props) {
       {/* tailwindcss utility works from smallest to largest screensize */}
       {/* hidden -> mobile screen hide the text */}
       {/* uppercase md:inline-flex text-sm -> medium screen size show text in uppercase, small font and gray color */}
-      <div id="navbartext" className="uppercase hidden md:inline-flex text-sm text-lightinline dark:text-darkinline mx-4">
-        Toggle Me for <span id="light" className="mx-1">{colorTheme === "light" ? "Light Mode" : "Dark Mode"}</span><span id="dark" className="mx-1 hidden"> Dark Mode!</span>
+      <div id="navbartext" className="cursor-none uppercase hidden md:inline-flex text-sm text-lightinline dark:text-darkinline mx-4">
+        Toggle Me for <span className="mx-1">{colorTheme === "light" ? "Light Mode!" : "Dark Mode!"}</span>
       </div>
     </div>
   );
