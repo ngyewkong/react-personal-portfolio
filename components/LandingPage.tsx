@@ -9,7 +9,7 @@ type Props = {};
 
 // useTypewriter hook takes in words array, looping condition, duration delaySpeed
 // to do animation withh typewriter feels
-function LandingPage({}: Props) {
+function LandingPage({ }: Props) {
   const [text, count] = useTypewriter({
     words: [
       "<div> Hi, I'm Yew Kong. </div>",
@@ -38,7 +38,8 @@ function LandingPage({}: Props) {
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold scroll-px-10">
           <span className="text-lightinline dark:text-darkinline">{text}</span>
-          <Cursor cursorColor="#F7AB0A" />
+          <span className="text-lightsecondary dark:text-darksecondary"><Cursor /></span>
+
         </h1>
 
         <div className="pt-5 text-lightinline dark:text-darkinline">
